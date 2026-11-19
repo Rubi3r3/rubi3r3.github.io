@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/eco-17/64/earth-world-global-green-512.png"/>
+<title>Rubiere Ramirez | Geoinformatics Specialist</title>
+<meta name="description" content="Geoinformatics Specialist and Geospatial Data Researcher (MSc Student).">
+<meta name="color-scheme" content="dark">
+<style>
+:root{
+  --bg:#0f1214;
+  --card:#181c20;
+  --line:#272d33;
+  --text:#e8eaec;
+  --muted:#98a2ab;
+  --accent:#7fc8a9;
+  --shadow:0 18px 40px -18px rgba(0,0,0,.8),0 2px 0 rgba(255,255,255,.03) inset;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:dark;scroll-behavior:smooth}
+body{
+  background:radial-gradient(60rem 30rem at 50% -10%,#1a2420 0%,var(--bg) 60%) fixed;
+  color:var(--text);
+  font-family:"Inter","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+main{max-width:60rem;margin:0 auto;padding:3rem 1.5rem 3rem;display:grid;gap:1.5rem}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:1.75rem;box-shadow:var(--shadow);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.card:hover{transform:translateY(-6px);border-color:#3a443f;box-shadow:0 26px 50px -18px rgba(0,0,0,.9)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center;padding:2.25rem}
+.photo{
+  width:11rem;height:11rem;border-radius:50%;overflow:hidden;
+  border:3px solid var(--accent);background:#222a2e;
+  display:grid;place-items:center;font-size:3rem;font-weight:700;color:var(--accent);
+  box-shadow:0 14px 30px -12px rgba(0,0,0,.8);
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.role{margin-top:.6rem;color:var(--accent);font-size:1.05rem}
+.where{margin-top:.2rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.btn{
+  display:inline-block;padding:.6rem 1.15rem;border-radius:10px;
+  border:1px solid var(--line);background:transparent;text-decoration:none;font-weight:600;
+  transition:transform .15s,border-color .15s,background .15s;
+}
+.btn:hover{border-color:var(--accent);transform:translateY(-2px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#0f1c16}
+.btn.primary:hover{background:#9ad8bd}
+
+h2{font-size:1.05rem;font-weight:600;margin-bottom:.9rem}
+p{max-width:42rem;color:#cfd4d8}
+p+p{margin-top:.9rem}
+p a,.contact a{color:var(--accent);text-underline-offset:3px}
+
+.row{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none}
+.tags li{padding:.3rem .8rem;border:1px solid var(--line);border-radius:999px;background:#12161a;font-size:.9rem}
+
+.projects-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin:1rem .25rem .25rem}
+.projects-head h2{margin:0;font-size:1.4rem;letter-spacing:-.01em}
+.projects-head p{color:var(--muted);font-size:.95rem}
+.projects-head a{color:var(--accent);text-underline-offset:3px;font-weight:600}
+.flow{list-style:none;position:relative;display:grid;gap:1.5rem;padding-left:2.25rem}
+.flow::before{content:"";position:absolute;left:.55rem;top:1rem;bottom:1rem;width:2px;background:linear-gradient(var(--accent),transparent)}
+.flow>li{position:relative}
+.flow>li::before{
+  content:"";position:absolute;left:-2.25rem;top:1.7rem;width:1.1rem;height:1.1rem;border-radius:50%;
+  background:var(--bg);border:2px solid var(--accent);box-shadow:0 0 0 5px rgba(127,200,169,.12);
+}
+.flow .card{padding:0}
+.flow a.item{display:block;padding:1.5rem 1.75rem;text-decoration:none}
+.flow .top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.flow strong{font-weight:600;font-size:1.05rem}
+.flow span.d{display:block;margin-top:.45rem;color:var(--muted);font-size:.95rem;max-width:40rem}
+.flow em{padding:.1rem .7rem;border-radius:999px;border:1px solid var(--line);font-style:normal;font-size:.8rem;color:var(--accent);white-space:nowrap}
+.flow .go{display:inline-block;margin-top:.9rem;font-size:.9rem;color:var(--accent);font-weight:600}
+.flow>li:hover::before{background:var(--accent)}
+
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding-top:.5rem}
+
+/* gentle floating */
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -6px}}
+.float{animation:float 7s ease-in-out infinite}
+.float.d1{animation-delay:-2s}
+.float.d2{animation-delay:-4s}
+.float.d3{animation-delay:-5.5s}
+
+@media (max-width:720px){
+  .flow{padding-left:1.75rem}.flow>li::before{left:-1.75rem}.flow::before{left:.1rem}
+  .hero{grid-template-columns:1fr;text-align:left}
+  .photo{width:9rem;height:9rem}
+  .row{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .float{animation:none}
+}
+</style>
+</head>
+<body>
+<main>
+  <header class="card hero float">
+    <div class="photo" id="photo">
+      <!--<img src="https://avatars.githubusercontent.com/u/64884499?v=4" alt="Portrait of Rubiere Ramirez" onerror="this.remove();document.getElementById('photo').textContent='RR'">-->
+      <img src="assets/rr-pic.JPG" alt="Portrait of Rubiere Ramirez" onerror="this.remove();document.getElementById('photo').textContent='RR'">
+    </div>
+    <div>
+      <h1>Rubiere Ramirez</h1>
+      <p class="role">Geoinformatics Specialist</p>
+      <p class="where">Belmopan, Belize</p>
+      <div class="actions">
+        <a class="btn primary" href="https://rubi3r3.github.io/digi_resume/">Resume</a>
+        <a class="btn primary" href="https://rubi3r3.github.io/cv/">Curriculum Vitae</a>
+        <a class="btn" href="https://github.com/Rubi3r3">GitHub</a>
+        <a class="btn" href="mailto:rubiere.ramirez@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="row">
+    <section class="card float d1" id="about">
+      <h2>About</h2>
+      <p>I am a geoinformatics specialist, geospatial data professional and postgraduate student pursuing a Master of Science in Geographical Information Science &amp; Systems at the <a href="https://www.plus.ac.at/?lang=en">Universität Salzburg</a>.</p>
+      <p>I am a Geographic Information Systems Assistant at the <a href="https://sib.org.bz/">Statistical Institute of Belize</a>, managing geospatial data from censuses and surveys, and a Geoinformatics Specialist supporting <a href="https://fragmentsofhope.org/">Fragments of Hope</a> coral conservation initiatives.</p>
+      <p>I am looking to collaborate on spatial projects.</p>
+    </section>
+    <section class="card float d2" id="stack">
+      <h2>Tech stack</h2>
+      <ul class="tags">
+        <li>Python</li><li>R</li><li>SQL</li><li>PostgreSQL</li><li>MariaDB</li><li>MySQL</li><li>SQLite</li><li>QGIS</li><li>Earth Observation</li><li>Data Engineering</li><li>Remote Sensing</li><li>Spatial Data Science</li> <li>Google Earth Engine</li>
+      </ul>
+    </section>
+  </div>
+
+      <section class="card contact float d1" id="contact">
+    <h2>Research Interest</h2>
+    <ul style="padding-left: 20px; margin-left: 0;">
+    <p><li>Spatial Disaggregation</li></a></p>
+  <p><li>Earth Observation & Remote Sensing</li></a></p></ul>
+  </section>
+
+
+  <section id="projects" aria-label="Projects">
+    <div class="projects-head">
+      <h2>Projects</h2>
+      <p>Repositories from <a href="https://github.com/Rubi3r3?tab=repositories">github.com/Rubi3r3</a></p>
+    </div>
+    <ol class="flow">
+      <li><div class="card float d1"><a class="item" href="https://github.com/Rubi3r3/qgis_mariadb_plugin">
+        <div class="top"><strong>qgis_mariadb_plugin</strong><em>Python</em></div>
+        <span class="d">A plugin to fetch MariaDB and add output to the map in QGIS.</span>
+        <span class="go">View repository</span></a></div></li>
+      <li><div class="card float d2"><a class="item" href="https://github.com/Rubi3r3/earthobservation_r">
+        <div class="top"><strong>earthobservation_r</strong><em>HTML</em></div>
+        <span class="d">Remote sensing image analysis using R.</span>
+        <span class="go">View repository</span></a></div></li>
+      <li><div class="card float d3"><a class="item" href="https://github.com/Rubi3r3/thebuiltenviro_ml_eo_gee">
+        <div class="top"><strong>thebuiltenviro_ml_eo_gee</strong><em>JavaScript</em></div>
+        <span class="d">The built environment analysed with spectral indices, spectral bands, machine learning algorithms and land surface Earth observation data.</span>
+        <span class="go">View repository</span></a></div></li>
+      <li><div class="card float d1"><a class="item" href="https://github.com/Rubi3r3/urbangreeneess_py_ml_eo_gee">
+        <div class="top"><strong>urbangreeneess_py_ml_eo_gee</strong><em>Jupyter Notebook</em></div>
+        <span class="d">Urban greenness analysis for environmental monitoring course work.</span>
+        <span class="go">View repository</span></a></div></li>
+    </ol>
+  </section>
+
+<center>
+  <section class="card contact float d1" id="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:rubiere.ramirez@gmail.com">rubiere.ramirez@gmail.com</a></p>
+  </section>
+</center>
+  <footer>© 2026 Rubiere Ramirez. All rights reserved.</footer>
+</main>
+</body>
+</html>
